@@ -29,14 +29,13 @@ public class Main {
 
     /*
         Решение задачи № 1
-        Не уверен в правильности решения задачи.
+        Уверен в не правильности решения задачи.
     */
     public static void optionOne(List<Car> list){
         StringBuilder str = new StringBuilder();
         File file = new File("file.zip");
         ZipEntry zFile = new ZipEntry("finished.txt");
         try {
-
             if(!file.exists()) {
                 file.createNewFile();
             }
@@ -76,6 +75,7 @@ public class Main {
         list.sort((x1,x2) -> {
             return x1.getPosition() - x2.getPosition();
         });
+
         for (int i = 0; i < list.size() - 1; i++) {
             ids[i] = list.get(i).getId();
         }
