@@ -6,7 +6,7 @@ public class MailSender {
     }
 
     public void sendMessage(Object object){
-        System.out.println("Hi!");
+        System.out.printf("MailSender::sendMessage <--> %s\n",((People) object).getName());
     }
 
 }

@@ -9,8 +9,8 @@ public class RegisterHandler implements Callback{
      */
     @Override
     public void execute(Object object) {
-        System.out.println("Пользователь "+ ((People) object).getName() + " зарегистрирован!");
+        System.out.printf("Пользователь %s зарегистрирован!\n",((People) object).getName());
         mailSender.sendMessage(object);
-        System.out.println("Сообщение обьекту " + ((People) object).getName() + " отправлено");
+        System.out.printf("Сообщение обьекту %s отправлено\n",((People) object).getName());
     }
 }
