@@ -1,9 +1,10 @@
+package cars;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
@@ -13,9 +14,9 @@ public class Main {
         List<Car> list = new ArrayList<>();
 
         list.add(new Car((byte) 2));
-        list.add(new Car((byte) 1));
-        list.add(new Car((byte) 3));
         list.add(new Car((byte) 5));
+        list.add(new Car((byte) 3));
+        list.add(new Car((byte) 1));
         list.add(new Car((byte) 4));
         list.add(new Car((byte) 7));
         list.add(new Car((byte) 6));
@@ -64,7 +65,7 @@ public class Main {
     /*
         Решение задачи № 2
         Просто передаем порядок номеров машин в порядке прибытия в массиве.
-        + последнюю не записываем и будем считать что она приехала последней.
+        + последнюю не записываем и соответсвенно приехала последней.
         c 20 байт до 9 байт
     */
     public static byte[] optionTwo(List<Car> list){

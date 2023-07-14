@@ -1,3 +1,5 @@
+package cars;
+
 public class Car {
 
     private static byte nextId = 1;
